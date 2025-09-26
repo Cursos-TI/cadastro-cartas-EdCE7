@@ -15,7 +15,7 @@ printf("Qual o seu Estado?\n");
 scanf("%c", &estado);
 
 printf("Qual o código da carta?\n");
-scanf("%s", codigo);
+scanf("%s", &codigo);
 
 printf("Qual o nome da cidade?\n");
 scanf("%s", &cidade);
