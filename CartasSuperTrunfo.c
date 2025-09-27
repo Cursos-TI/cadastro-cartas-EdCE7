@@ -32,15 +32,18 @@ scanf("%f", &pib);
 printf("Quantos pontos turísticos há na cidade?\n");
 scanf("%d", &pontos_tu);
 
-
+float densidade = populacao / area;
+float pib_per_capita = pib / populacao;
   // Área para exibição dos dados da cidade
 printf("Estado: %c\n", estado);
 printf("Código: %s\n", codigo);
 printf("Cidade: %s\n", cidade);
 printf("População: %d\n", populacao);
-printf("Area: %f\n", area);
-printf("PIB: %f\n", pib);
+printf("Area: %f\n km²", area);
+printf("PIB: %.2f \n", pib);
 printf("Pontos Turísticos: %d\n", pontos_tu);
+printf("Densidade populacional: %.2f hab/km²\n", densidade);
+printf("O PIB per capita é de: R$%.2f", pib_per_capita);
 
 return 0;
 } 
